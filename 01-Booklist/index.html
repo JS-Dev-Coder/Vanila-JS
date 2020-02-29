@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JS from scratch</title>
+  </head>
+  <body>
+    <h1 id="demo">Bookmake list</h1>
+    <div class="container">
+      <form id="bookmarkForm" class="mb-5">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" name="" id="title" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" name="" id="author" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="isbn">#ISBN</label>
+          <input type="text" name="" id="isbn" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </form>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">#ISNB</th>
+          </tr>
+        </thead>
+        <tbody id="table-list">
+          <tr>
+            <th scope="row">First Book</th>
+            <td>Mega</td>
+            <td>9938</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
